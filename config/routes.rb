@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'home/index'
+  get 'user_current', to: 'home#user_current'
   devise_for :users, controllers: {
     sessions: 'users/sessions',
     registrations: 'users/registrations'
