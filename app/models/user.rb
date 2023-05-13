@@ -9,4 +9,7 @@ class User < ApplicationRecord
   def jwt_payload
     super
   end
+
+  has_many :posts
+  has_many :meetups
 end
